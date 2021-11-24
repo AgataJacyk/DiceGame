@@ -1,6 +1,6 @@
-
-
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+//button click 
+function roll() {
+  var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 
 var randomDiceImage = "dice" + randomNumber1 + ".png";
 
@@ -25,9 +25,7 @@ if (randomNumber1 > randomNumber2) {
 } else { 
     document.querySelector("h1").innerHTML = "Draw!";
 }
-
-
-
+}
 
 //confetti
 var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, drawCircle2, drawCircle3, i, range, xpos;

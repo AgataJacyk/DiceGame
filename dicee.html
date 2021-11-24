@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Oswald:wght@300&display=swap"
     rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/e31afff6bf.js" crossorigin="anonymous"></script>
+
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
@@ -20,22 +23,29 @@
   </script>
 </head>
 
-<body>
+<body><canvas id="confeti"></canvas>
+
   <div class="container">
     <h1 class="banner">Refresh Me</h1>
-    <canvas id="confeti"></canvas>
     <div class="dice">
-      <p>Player 1</p>
+      <h3>Player 1</h3>
       <img class="img1" src="images/dice6.png">
     </div>
     <div class="dice">
-      <p>Player 2</p>
+      <h3>Player 2</h3>
       <img class="img2" src="images/dice6.png">
     </div>
+    <div class="button_box">
+    <button onClick="roll()" class="button-64" role="button"><span class="text"><h2>Roll</h2></span></button>
+</div>
   </div>
+  <footer>
+    <div class="bottom_container">
+        <p><i class="far fa-copyright"></i> Copyrights Agata Jacyk</p>
+    </div>
+</footer>
 
-
-  <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
