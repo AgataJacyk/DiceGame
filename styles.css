@@ -121,8 +121,8 @@ p{
   height: 70px;
   border: 1px solid #292d58;
   background: #232931;
-  border-radius: 4px;
-  box-shadow: 5px 0 #232931 inset;
+  border-radius: 3px;
+  box-shadow: #4ecca252 0 8px 15px -5px;
   text-align: center;
 }
 
